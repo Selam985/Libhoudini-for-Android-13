@@ -35,19 +35,18 @@ chown root:root /system/lib*/libhoudini.so
 **To do this, while in the libhoudini folder, type the following:**
 
 cp -r arm/* system/lib/arm
+
 cp -r arm64/* system/lib64/arm64
 
 Permissions:
 
-# 1. Set ownership of the folders and all files inside to root
+
 chown -R root:root /system/lib/arm
 chown -R root:root /system/lib64/arm64
 
-# 2. Set folder permissions to 755 (drwxr-xr-x)
 chmod 755 /system/lib/arm
 chmod 755 /system/lib64/arm64
 
-# 3. Set permissions of all .so files inside to 644 (-rw-r--r--)
 chmod 644 /system/lib/arm/*.so
 chmod 644 /system/lib64/arm64/*.so
 
