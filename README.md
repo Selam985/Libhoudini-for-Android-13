@@ -14,4 +14,7 @@ This repository contains **Intel Houdini** libraries surgically extracted from t
 - `/arm` & `/arm64`: ARM compatibility libraries.
 
 ## 🚀 Installation
+If you are installing on a pre-built system:
 
+Move the files under bin to system/bin
+Move the .so files from the lib and lib64 folders to system/lib and system/lib64
